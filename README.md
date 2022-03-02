@@ -65,14 +65,13 @@
         <textarea rows="4" cols="28" name="result" id="results"></textarea> 
       </div> 
     </form> 
-    ::after
   </div> 
 </section>
 <script>
   const displayResults=(e="",t="",a="")=>{document.getElementById("results").textContent=e,document.getElementById("finalaverage").textContent=t,document.getElementById("finalletter").textContent=a};function average(){let e={homework:parseInt(document.forms.myform.elements.homework.value),midterm:parseInt(document.forms.myform.elements.midterm.value),final:parseInt(document.forms.myform.elements.final.value),participation:parseInt(document.forms.myform.elements.participation.value),average:()=>Math.round(.5*e.homework+.2*e.midterm+.2*e.final+.1*e.participation),letter:()=>e.average()>=90?"A":e.average()>=80?"B":e.average()>=70?"C":e.average()>=80?"D":"F",result:()=>e.average()<70?"Student must retake the course.":""};Number.isNaN(e.homework)||Number.isNaN(e.midterm)||Number.isNaN(e.final)||Number.isNaN(e.participation)||0>e.homework||e.homework>100||0>e.midterm||e.midterm>100||0>e.final||e.final>100||0>e.participation||e.participation>100?displayResults("Invalid input! Please enter integers between 0 and 100."):displayResults(e.result(),String(e.average()),e.letter())}document.getElementById("reset").addEventListener("click",(()=>{displayResults()}))
   </script>
-  ::after
-  </div>
+  
+ 
 
 
 
