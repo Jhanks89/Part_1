@@ -1,5 +1,4 @@
-# PART 1
-## Student Grades
+# Student Grades
 <br>
 <section class="body"> 
   <div class="row"> 
